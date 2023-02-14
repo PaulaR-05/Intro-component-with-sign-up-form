@@ -41,34 +41,54 @@
               type="text"
               placeholder="First Name"
             />
-            <div class="first-name-error"></div>
+            <div class="firstName-error" id="firstName-error"></div>
             <label for="first-name" class="name-label"></label>
           </div>
 
           <div class="input-form">
-            <input class="last-name" type="text" placeholder="Last Name" />
-            <div class="last-name-error"></div>
+            <input
+              class="last-name"
+              id="last-name"
+              type="text"
+              placeholder="Last Name"
+            />
+            <div class="lastName-error" id="lastName-error"></div>
             <label for="last-name" class="lastname-label"></label>
           </div>
 
           <div class="input-form">
             <input
               class="user-email"
+              id="user-email"
               type="email"
               placeholder="Email Address"
             />
-            <div class="user-email-error"></div>
-            <label for="user-email" class="email-label"></label>
+            <div class="userEmail-error"></div>
+            <label
+              for="user-email"
+              id="userEmail-error"
+              class="email-label"
+            ></label>
           </div>
 
           <div class="input-form">
-            <input class="user-pass" type="password" placeholder="Password" />
-            <div class="user-pass-error"></div>
+            <input
+              class="user-pass"
+              id="user-pass"
+              type="password"
+              placeholder="Password"
+            />
+            <div class="userPassword-error" id="userPassword-error"></div>
             <label for="user-pass" class="pass-label"></label>
           </div>
           <div class="input-form">
             <label for="submit-info" class="success-msg"></label>
-            <button class="submit-info" id="submit-info" type="submit">
+            <button
+              class="submit-info"
+              id="submit-info"
+              type="submit"
+              onclick="validate()"
+            >
               Claim your free trial
             </button>
           </div>

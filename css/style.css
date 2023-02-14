@@ -8,6 +8,7 @@
 }
 
 .attribution {
+  display: none;
   font-size: 11px;
   text-align: center;
 }
@@ -82,7 +83,7 @@ h6 {
   .container {
     text-align: center;
     max-width: 375px;
-    margin-top: 3em;
+    margin-top: 1.5em;
   }
 
   .container-one {
@@ -99,8 +100,8 @@ h6 {
   }
 
   .container-blue {
-    margin-top: 3em;
-    margin-bottom: 1.5em;
+    margin-top: 2.5em;
+    margin-bottom: 1.1em;
     border-radius: 0.5em;
     max-width: 100%;
     border-color: transparent;
@@ -175,6 +176,25 @@ h6 {
     text-decoration: none;
     color: var(--Red);
     font-weight: 600;
+  }
+
+  input:focus-visible {
+    outline: 1px solid var(--Blue);
+  }
+
+  .firstName-error,
+  .lastName-error,
+  .userEmail-error,
+  .userPassword-error {
+    visibility: hidden;
+    right: 3%;
+    top: 25%;
+    position: absolute;
+    align-items: right;
+    background-image: url("../images/icon-error.svg");
+    background-repeat: no-repeat;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 }
 
@@ -267,7 +287,7 @@ h6 {
   input::placeholder {
     font-weight: 600;
     font-size: 0.9em;
-    padding-left: 1em;
+    padding-left: 0.1em;
   }
 
   .submit-info {
@@ -294,5 +314,23 @@ h6 {
     text-decoration: none;
     color: var(--Red);
     font-weight: 600;
+  }
+
+  input:focus-visible {
+    outline: 1px solid var(--Blue);
+  }
+  .firstName-error,
+  .lastName-error,
+  .userEmail-error,
+  .userPassword-error {
+    visibility: hidden;
+    right: 3%;
+    top: 25%;
+    position: absolute;
+    align-items: right;
+    background-image: url("../images/icon-error.svg");
+    background-repeat: no-repeat;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 }
