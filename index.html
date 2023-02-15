@@ -68,12 +68,12 @@
               id="user-email"
               type="email"
               placeholder="Email Address"
-              pattern=".+@globex\.com"
+              pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
               required
             />
             <div class="userEmail-error" id="userEmail-error"></div>
             <label for="user-email" id="userEmail-error" class="email-label"
-              ><p class="disable">Please enter a valid email address</p></label
+              ><p class="disable">Looks like this is not an email</p></label
             >
           </div>
 
