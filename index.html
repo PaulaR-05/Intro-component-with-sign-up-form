@@ -40,10 +40,12 @@
               id="first-name"
               type="text"
               placeholder="First Name"
+              required
             />
             <div class="firstName-error" id="firstName-error"></div>
-            <label for="first-name" class="name-label"></label>
-            <p class="disable">First Name cannot be empty</p>
+            <label for="first-name" class="name-label"
+              ><p class="disable">First Name cannot be empty</p></label
+            >
           </div>
 
           <div class="input-form">
@@ -52,10 +54,12 @@
               id="last-name"
               type="text"
               placeholder="Last Name"
+              required
             />
             <div class="lastName-error" id="lastName-error"></div>
-            <label for="last-name" class="lastname-label"></label>
-            <p class="disable">Last Name cannot be empty</p>
+            <label for="last-name" class="lastname-label"
+              ><p class="disable">Last Name cannot be empty</p></label
+            >
           </div>
 
           <div class="input-form">
@@ -64,14 +68,13 @@
               id="user-email"
               type="email"
               placeholder="Email Address"
+              pattern=".+@globex\.com"
+              required
             />
-            <div class="userEmail-error"></div>
-            <label
-              for="user-email"
-              id="userEmail-error"
-              class="email-label"
-            ></label>
-            <p class="disable">Email cannot be empty</p>
+            <div class="userEmail-error" id="userEmail-error"></div>
+            <label for="user-email" id="userEmail-error" class="email-label"
+              ><p class="disable">Email cannot be empty</p></label
+            >
           </div>
 
           <div class="input-form">
@@ -80,10 +83,12 @@
               id="user-pass"
               type="password"
               placeholder="Password"
+              required
             />
             <div class="userPassword-error" id="userPassword-error"></div>
-            <label for="user-pass" class="pass-label"></label>
-            <p class="disable">Password cannot be empty</p>
+            <label for="user-pass" class="pass-label"
+              ><p class="disable">Password cannot be empty</p></label
+            >
           </div>
           <div class="input-form">
             <label for="submit-info" class="success-msg"></label>

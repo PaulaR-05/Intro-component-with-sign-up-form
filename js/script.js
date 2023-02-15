@@ -7,27 +7,31 @@ console.log(password);
 let email = document.getElementById("user-email");
 
 function checkinfo() {
-  if (validName.value == "") {
+  if (
+    validName.value == "" ||
+    lastName.value == "" ||
+    password.value == "" ||
+    email.value == ""
+  ) {
     document.getElementById("firstName-error").style.visibility = "visible";
-    document.querySelector(".disable").style.display = "block";
-  }
-
-  if (lastName.value == "") {
+    document
+      .querySelector(".name-label")
+      .querySelector(".disable").style.display = "block";
     document.getElementById("lastName-error").style.visibility = "visible";
-    document.querySelector(".disable").style.display = "block";
-  }
-}
-
-function checkEmail() {
-  let emailInfo = email.includes("@");
-  if (emailInfo == false || email.value == "") {
+    document
+      .querySelector(".lastname-label")
+      .querySelector(".disable").style.display = "block";
     document.getElementById("userEmail-error").style.visibility = "visible";
+    document
+      .querySelector(".email-label")
+      .querySelector(".disable").style.display = "block";
+    document.getElementById("userPassword-error").style.visibility = "visible";
+    document
+      .querySelector(".pass-label")
+      .querySelector(".disable").style.display = "block";
   }
-  return false;
 }
-console.log(checkEmail);
 
 function validate() {
   checkinfo();
-  checkEmail();
 }
