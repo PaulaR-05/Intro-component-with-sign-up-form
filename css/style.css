@@ -114,6 +114,10 @@ h6 {
     box-shadow: 0px 9px 5px -1px rgba(0, 0, 0, 0.27);
   }
 
+  .container-blue:hover {
+    background-color: hsl(247, 35%, 32%);
+  }
+
   .container-blue span {
     font-weight: 600;
   }
@@ -161,6 +165,10 @@ h6 {
     padding: 1em;
     font-weight: 500;
     transition: all ease-in-out 0.3s;
+  }
+
+  .submit-info:hover {
+    background-color: hsl(154, 55%, 39%);
   }
 
   .btn-term {
@@ -273,6 +281,9 @@ h6 {
     padding: 1em 1em;
     box-shadow: 0px 6px 4px -1px rgba(0, 0, 0, 0.27);
   }
+  .container-blue:hover {
+    background-color: hsl(247, 35%, 32%);
+  }
   .container-blue span {
     font-weight: 700;
   }
@@ -319,7 +330,9 @@ h6 {
     letter-spacing: 1px;
     transition: all ease-in-out 0.3s;
   }
-
+  .submit-info:hover {
+    background-color: hsl(154, 55%, 39%);
+  }
   .btn-term {
     font-size: 0.68rem;
     font-weight: 400;
