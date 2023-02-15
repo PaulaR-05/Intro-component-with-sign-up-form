@@ -7,24 +7,33 @@ console.log(password);
 let email = document.getElementById("user-email");
 
 function checkinfo() {
-  if (
-    validName.value == "" ||
-    lastName.value == "" ||
-    password.value == "" ||
-    email.value == ""
-  ) {
+  if (validName.value == "") {
     document.getElementById("firstName-error").style.visibility = "visible";
     document
       .querySelector(".name-label")
       .querySelector(".disable").style.display = "block";
+  }
+}
+
+function checkLastName() {
+  if (lastName.value == "") {
     document.getElementById("lastName-error").style.visibility = "visible";
     document
       .querySelector(".lastname-label")
       .querySelector(".disable").style.display = "block";
+  }
+}
+
+function checkEmail() {
+  if (email.value == "") {
     document.getElementById("userEmail-error").style.visibility = "visible";
     document
       .querySelector(".email-label")
       .querySelector(".disable").style.display = "block";
+  }
+}
+function checkPass() {
+  if (password.value == "") {
     document.getElementById("userPassword-error").style.visibility = "visible";
     document
       .querySelector(".pass-label")
@@ -34,4 +43,7 @@ function checkinfo() {
 
 function validate() {
   checkinfo();
+  checkLastName();
+  checkPass();
+  checkEmail();
 }
