@@ -207,7 +207,6 @@ h6 {
   }
 
   .validation-msg {
-    display: none;
     text-align: center;
     font-size: 0.9em;
     font-weight: 500;
@@ -361,7 +360,6 @@ h6 {
   }
 
   .validation-msg {
-    display: none;
     text-align: center;
     font-size: 0.9rem;
     font-weight: 500;
