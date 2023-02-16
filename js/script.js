@@ -1,23 +1,18 @@
 let validName = document.getElementById("first-name");
-console.log(validName);
 let lastName = document.getElementById("last-name");
-console.log(lastName);
 let password = document.getElementById("user-pass");
-console.log(password);
 let email = document.getElementById("user-email");
 let validationMsg = document.querySelector(".validation-msg");
-let checkE = email.toString().includes("@");
 
 function validate() {
   if (
+    email.includes("@") &&
     validName.value != "" &&
     lastName.value != "" &&
     password.value != "" &&
     email.value != ""
-  ) {
-    validationMsg.innerHTML = "Success! Please check your email";
-  }
-  checkinfo();
+  )
+    checkinfo();
 }
 
 function checkinfo() {
